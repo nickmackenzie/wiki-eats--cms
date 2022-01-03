@@ -4,7 +4,8 @@
   "info": {
     "singularName": "business",
     "pluralName": "businesses",
-    "displayName": "Business"
+    "displayName": "Business",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -22,6 +23,37 @@
     },
     "rating": {
       "type": "decimal"
+    },
+    "email": {
+      "type": "email"
+    },
+    "Facebook": {
+      "type": "string"
+    },
+    "Instragram": {
+      "type": "string"
+    },
+    "City": {
+      "type": "string"
+    },
+    "Postal_Code": {
+      "type": "string"
+    },
+    "Country": {
+      "type": "string"
+    },
+    "Province": {
+      "type": "string"
+    },
+    "tags": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tag.tag"
+    },
+    "region": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::region.region"
     }
   }
 }
